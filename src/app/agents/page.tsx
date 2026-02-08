@@ -13,6 +13,15 @@ interface SubAgent {
 
 const subAgents: SubAgent[] = [
   {
+    id: "80306b5b-5cdf-42b1-a894-6aa94f3cc739",
+    label: "family-app-builder",
+    status: "completed",
+    task: "Built Family Circle MVP - link-based family connection app with daily prompts, photo responses, reactions, comments, streaks, and realtime updates.",
+    runtime: "8m 37s",
+    tokens: "58.6k",
+    completedAt: "2026-02-08 02:44 UTC",
+  },
+  {
     id: "2c07ba6f-a6ba-474d-91b0-b5ffa3f64d49",
     label: "family-prompts-builder",
     status: "completed",

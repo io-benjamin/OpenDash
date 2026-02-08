@@ -40,10 +40,11 @@ const projects: Project[] = [
     tags: ["Dashboard", "Next.js"],
   },
   {
-    name: "Family Connection App",
-    description: "Keep family members connected across generations",
-    status: "idea",
-    tags: ["Mobile", "Social"],
+    name: "Family Circle",
+    description: "Link-based family connection app. Daily prompts, photo responses, reactions, streaks. Grandma-proof.",
+    status: "mvp",
+    github: "https://github.com/io-benjamin/family-app",
+    tags: ["PWA", "Supabase", "Realtime"],
   },
   {
     name: "Crypto Tokenization Platform",
