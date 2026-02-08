@@ -3,6 +3,7 @@ import { ProjectsBoard } from "@/components/dashboard/projects-board";
 import { NotesMemory } from "@/components/dashboard/notes-memory";
 import { ScheduledReports } from "@/components/dashboard/scheduled-reports";
 import { ContentIdeas } from "@/components/dashboard/content-ideas";
+import { LogoutButton } from "@/components/logout-button";
 
 export default function Dashboard() {
   return (
@@ -28,6 +29,7 @@ export default function Dashboard() {
                 <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span>Systems Online</span>
               </div>
+              <LogoutButton />
             </div>
           </div>
         </div>
