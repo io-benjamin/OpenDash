@@ -1,0 +1,54 @@
+"use client";
+
+import { Navigation } from "./navigation";
+import { LogoutButton } from "./logout-button";
+
+export function Shell({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-3">
+                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">IO</span>
+                </div>
+                <div>
+                  <h1 className="text-xl font-semibold tracking-tight">OpenDash</h1>
+                  <p className="text-xs text-muted-foreground">Command Center</p>
+                </div>
+              </div>
+              <Navigation />
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="px-3 py-1 rounded-full bg-violet-500/20 text-violet-400 text-xs font-medium">
+                🌑 Nix was here
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>Systems Online</span>
+              </div>
+              <LogoutButton />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-6 py-8">
+        {children}
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t border-border/40 py-6 mt-8">
+        <div className="container mx-auto px-6">
+          <p className="text-center text-sm text-muted-foreground">
+            OpenDash v1.0 • Built with Next.js + shadcn/ui
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
