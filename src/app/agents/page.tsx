@@ -13,6 +13,15 @@ interface SubAgent {
 
 const subAgents: SubAgent[] = [
   {
+    id: "2c07ba6f-a6ba-474d-91b0-b5ffa3f64d49",
+    label: "family-prompts-builder",
+    status: "completed",
+    task: "🌍 AUTONOMOUS: Built Family Prompts - open source API & widget with 370+ daily conversation prompts for families. Free forever, MIT licensed.",
+    runtime: "8m 49s",
+    tokens: "55.2k",
+    completedAt: "2026-02-08 02:32 UTC",
+  },
+  {
     id: "c9455f00-b858-47e2-831f-b780b5c5611f",
     label: "opendash-builder",
     status: "completed",

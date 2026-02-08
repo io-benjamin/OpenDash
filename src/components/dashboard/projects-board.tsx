@@ -2,23 +2,42 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Rocket, Lightbulb, Code, ExternalLink } from "lucide-react";
+import { Rocket, Lightbulb, Code, ExternalLink, Globe } from "lucide-react";
 
 interface Project {
   name: string;
   description: string;
-  status: "mvp" | "idea" | "building";
+  status: "live" | "mvp" | "idea" | "building";
   github?: string;
+  link?: string;
   tags: string[];
+  autonomous?: boolean;
 }
 
 const projects: Project[] = [
+  {
+    name: "Family Prompts",
+    description: "Open source API & widget for daily family conversation prompts. 370+ prompts, free forever.",
+    status: "live",
+    github: "https://github.com/io-benjamin/family-prompts",
+    link: "https://io-benjamin.github.io/family-prompts",
+    tags: ["Open Source", "API", "Widget"],
+    autonomous: true,
+  },
   {
     name: "Vera AI",
     description: "Personal AI assistant framework",
     status: "mvp",
     github: "https://github.com/io-benjamin/vera",
     tags: ["AI", "TypeScript"],
+  },
+  {
+    name: "OpenDash",
+    description: "Personal command center dashboard",
+    status: "live",
+    github: "https://github.com/io-benjamin/OpenDash",
+    link: "https://io-benjamin.github.io/OpenDash",
+    tags: ["Dashboard", "Next.js"],
   },
   {
     name: "Family Connection App",
@@ -36,6 +55,12 @@ const projects: Project[] = [
 
 function getStatusConfig(status: Project["status"]) {
   switch (status) {
+    case "live":
+      return {
+        label: "Live",
+        icon: <Globe className="h-3.5 w-3.5" />,
+        className: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
+      };
     case "mvp":
       return {
         label: "MVP",
