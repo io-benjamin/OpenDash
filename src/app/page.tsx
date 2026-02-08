@@ -20,9 +20,14 @@ export default function Dashboard() {
                 <p className="text-xs text-muted-foreground">Command Center</p>
               </div>
             </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Systems Online</span>
+            <div className="flex items-center gap-4">
+              <div className="px-3 py-1 rounded-full bg-violet-500/20 text-violet-400 text-xs font-medium">
+                🌑 Nix was here
+              </div>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>Systems Online</span>
+              </div>
             </div>
           </div>
         </div>
