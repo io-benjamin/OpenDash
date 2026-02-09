@@ -13,6 +13,15 @@ interface SubAgent {
 
 const subAgents: SubAgent[] = [
   {
+    id: "1f5f2165-5283-415c-889f-86f91979e84b",
+    label: "kitchensync-skeleton",
+    status: "completed",
+    task: "Built KitchenSync skeleton - restaurant inventory management app with dashboard, inventory, insights, recipes, and POS integration placeholders.",
+    runtime: "8m 57s",
+    tokens: "59.5k",
+    completedAt: "2026-02-09 01:51 UTC",
+  },
+  {
     id: "80306b5b-5cdf-42b1-a894-6aa94f3cc739",
     label: "family-app-builder",
     status: "completed",

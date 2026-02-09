@@ -47,6 +47,13 @@ const projects: Project[] = [
     tags: ["PWA", "Supabase", "Realtime"],
   },
   {
+    name: "KitchenSync",
+    description: "Restaurant inventory management. Connects to Clover/Toast POS, tracks stock, reduces waste.",
+    status: "building",
+    github: "https://github.com/io-benjamin/kitchen-sync",
+    tags: ["B2B", "SaaS", "API"],
+  },
+  {
     name: "Crypto Tokenization Platform",
     description: "Asset tokenization on blockchain",
     status: "idea",
